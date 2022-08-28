@@ -50,10 +50,9 @@ function contador() {
 visitas = visitas + 1
 if(visitas){
 localStorage.setItem("visitas", visitas)
-
-
 }
-
+let mostrarContador = document.querySelector("#contador")
+mostrarContador.innerHTML = `${visitas}`
 
 }
 
